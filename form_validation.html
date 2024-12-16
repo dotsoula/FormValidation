@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation Attributes in HTML</title>
+  </head>
+  <body>
+    <!-- Assignment 2 -->
+    <h1>Form Validation and Attributes</h1>
+    <h4>Form Validation</h4>
+    <p>
+      Form Validation is the process of making sure that the data submitted
+      through web forms is accurate, consistent and conforms to specific rules
+      and requirements that are predefined.
+    </p>
+    <h4>Explaining the Attributes</h4>
+    <p>Minlength Attributes specify the minimum values for and input field.</p>
+    <p>
+      Pattern Attributes specifies a regular expression that the input field's
+      value is checked against, when the form is submitted.
+    </p>
+    <p>
+      Required attribute specifies that an input field must be filled out before
+      submitting the form.
+    </p>
+    <!-- Assignment 3 -->
+    <!-- Creating a Form with Validation Attributes: -->
+
+    <form>
+      <h3>Form with Validation Attributes</h3>
+      <label for="username">Username</label>
+      <input type="text" name="username" required />
+    </form>
+
+    <form action="">
+      <label for="password">Password</label>
+      <input
+        type="password"
+        minlength="4"
+        pattern="[A-Za-z]1234567890-=/)(*&^%$#@!)"
+      />
+      <input type="submit" />
+    </form>
+
+    <p>Ensures the password is at least 4 characters long</p>
+    <p>Prevent submission if the password does not match the pattern</p>
+    <p>Ensures the field is filled in</p>
+  </body>
+</html>
